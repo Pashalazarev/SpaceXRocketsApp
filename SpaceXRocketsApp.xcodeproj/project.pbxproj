@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0849816660DD6A49D1EB92E6 /* Pods_SpaceXRocketsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */; };
 		FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF03582941FE55006772A0 /* AppDelegate.swift */; };
 		FAEF035B2941FE55006772A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF035A2941FE55006772A0 /* SceneDelegate.swift */; };
 		FAEF035D2941FE55006772A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF035C2941FE55006772A0 /* ViewController.swift */; };
 		FAEF03602941FE55006772A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEF035E2941FE55006772A0 /* Main.storyboard */; };
 		FAEF03622941FE56006772A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF03612941FE56006772A0 /* Assets.xcassets */; };
 		FAEF03652941FE56006772A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEF03632941FE56006772A0 /* LaunchScreen.storyboard */; };
+		FAEF036E2941FE74006772A0 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF036D2941FE74006772A0 /* Rocket.swift */; };
+		FAEF03702941FE80006772A0 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF036F2941FE80006772A0 /* Launch.swift */; };
+		FAEF03732941FED5006772A0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF03722941FED5006772A0 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXRocketsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B9830E0BB522086756CCAF /* Pods-SpaceXRocketsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DB50D95AF1CF4E78176E6624 /* Pods-SpaceXRocketsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.release.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.release.xcconfig"; sourceTree = "<group>"; };
 		FAEF03552941FE55006772A0 /* SpaceXRocketsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXRocketsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF03582941FE55006772A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEF035A2941FE55006772A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FAEF03612941FE56006772A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEF03642941FE56006772A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAEF03662941FE56006772A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEF036D2941FE74006772A0 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		FAEF036F2941FE80006772A0 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		FAEF03722941FED5006772A0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0849816660DD6A49D1EB92E6 /* Pods_SpaceXRocketsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		732E45B3EF01961DFE21F415 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8B9830E0BB522086756CCAF /* Pods-SpaceXRocketsApp.debug.xcconfig */,
+				DB50D95AF1CF4E78176E6624 /* Pods-SpaceXRocketsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA5DB35B0B633257EDAA6AAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAEF034C2941FE55006772A0 = {
 			isa = PBXGroup;
 			children = (
 				FAEF03572941FE55006772A0 /* SpaceXRocketsApp */,
 				FAEF03562941FE55006772A0 /* Products */,
+				732E45B3EF01961DFE21F415 /* Pods */,
+				AA5DB35B0B633257EDAA6AAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,58 @@
 		FAEF03572941FE55006772A0 /* SpaceXRocketsApp */ = {
 			isa = PBXGroup;
 			children = (
-				FAEF03582941FE55006772A0 /* AppDelegate.swift */,
-				FAEF035A2941FE55006772A0 /* SceneDelegate.swift */,
-				FAEF035C2941FE55006772A0 /* ViewController.swift */,
-				FAEF035E2941FE55006772A0 /* Main.storyboard */,
+				FAEF03752941FF0D006772A0 /* ViewControllers */,
+				FAEF036C2941FE60006772A0 /* Models */,
+				FAEF03712941FEB2006772A0 /* Services */,
+				FAEF03762941FF30006772A0 /* StoryBoards */,
+				FAEF03742941FEF6006772A0 /* SupportFiles */,
 				FAEF03612941FE56006772A0 /* Assets.xcassets */,
-				FAEF03632941FE56006772A0 /* LaunchScreen.storyboard */,
 				FAEF03662941FE56006772A0 /* Info.plist */,
 			);
 			path = SpaceXRocketsApp;
+			sourceTree = "<group>";
+		};
+		FAEF036C2941FE60006772A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF036D2941FE74006772A0 /* Rocket.swift */,
+				FAEF036F2941FE80006772A0 /* Launch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAEF03712941FEB2006772A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF03722941FED5006772A0 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAEF03742941FEF6006772A0 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF035A2941FE55006772A0 /* SceneDelegate.swift */,
+				FAEF03582941FE55006772A0 /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		FAEF03752941FF0D006772A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF035C2941FE55006772A0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAEF03762941FF30006772A0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF035E2941FE55006772A0 /* Main.storyboard */,
+				FAEF03632941FE56006772A0 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +147,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAEF03692941FE56006772A0 /* Build configuration list for PBXNativeTarget "SpaceXRocketsApp" */;
 			buildPhases = (
+				FAEF037729420319006772A0 /* ShellScript */,
+				35D7F465AA619AE29C964B13 /* [CP] Check Pods Manifest.lock */,
 				FAEF03512941FE55006772A0 /* Sources */,
 				FAEF03522941FE55006772A0 /* Frameworks */,
 				FAEF03532941FE55006772A0 /* Resources */,
@@ -133,6 +208,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35D7F465AA619AE29C964B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceXRocketsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEF037729420319006772A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAEF03512941FE55006772A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +259,9 @@
 				FAEF035D2941FE55006772A0 /* ViewController.swift in Sources */,
 				FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */,
 				FAEF035B2941FE55006772A0 /* SceneDelegate.swift in Sources */,
+				FAEF03702941FE80006772A0 /* Launch.swift in Sources */,
+				FAEF03732941FED5006772A0 /* NetworkService.swift in Sources */,
+				FAEF036E2941FE74006772A0 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +405,7 @@
 		};
 		FAEF036A2941FE56006772A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B9830E0BB522086756CCAF /* Pods-SpaceXRocketsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +434,7 @@
 		};
 		FAEF036B2941FE56006772A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB50D95AF1CF4E78176E6624 /* Pods-SpaceXRocketsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
