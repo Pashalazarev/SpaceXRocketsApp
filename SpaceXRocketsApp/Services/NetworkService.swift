@@ -84,5 +84,5 @@ final class NetworkService {
             }
         }.resume()
     }
- // TO DO: -  написать универсальную функцию, func makeRequest<Response: Decodable>(url: String, completion: @escaping (Response) -> Void 
+    // TO DO: -  написать универсальную функцию, func makeRequest<Response: Decodable>(url: String, completion: @escaping (Response) -> Void
 }
