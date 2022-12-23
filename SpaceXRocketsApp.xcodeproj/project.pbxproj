@@ -17,6 +17,7 @@
 		FAEF036E2941FE74006772A0 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF036D2941FE74006772A0 /* Rocket.swift */; };
 		FAEF03702941FE80006772A0 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF036F2941FE80006772A0 /* Launch.swift */; };
 		FAEF03732941FED5006772A0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF03722941FED5006772A0 /* NetworkService.swift */; };
+		FAEF2D8729530EE7002F2F9B /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF2D8629530EE7002F2F9B /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FAEF036D2941FE74006772A0 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		FAEF036F2941FE80006772A0 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		FAEF03722941FED5006772A0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FAEF2D8629530EE7002F2F9B /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,58 +88,59 @@
 		FAEF03572941FE55006772A0 /* SpaceXRocketsApp */ = {
 			isa = PBXGroup;
 			children = (
-				FAEF03752941FF0D006772A0 /* ViewControllers */,
-				FAEF036C2941FE60006772A0 /* Models */,
-				FAEF03712941FEB2006772A0 /* Services */,
-				FAEF03762941FF30006772A0 /* StoryBoards */,
-				FAEF03742941FEF6006772A0 /* SupportFiles */,
+				FAEF03752941FF0D006772A0 /* ViewController */,
+				FAEF036C2941FE60006772A0 /* Model */,
+				FAEF03712941FEB2006772A0 /* Service */,
+				FAEF03762941FF30006772A0 /* StoryBoard */,
+				FAEF03742941FEF6006772A0 /* SupportFile */,
 				FAEF03612941FE56006772A0 /* Assets.xcassets */,
 				FAEF03662941FE56006772A0 /* Info.plist */,
 			);
 			path = SpaceXRocketsApp;
 			sourceTree = "<group>";
 		};
-		FAEF036C2941FE60006772A0 /* Models */ = {
+		FAEF036C2941FE60006772A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				FAEF036D2941FE74006772A0 /* Rocket.swift */,
 				FAEF036F2941FE80006772A0 /* Launch.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		FAEF03712941FEB2006772A0 /* Services */ = {
+		FAEF03712941FEB2006772A0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				FAEF03722941FED5006772A0 /* NetworkService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
-		FAEF03742941FEF6006772A0 /* SupportFiles */ = {
+		FAEF03742941FEF6006772A0 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
 				FAEF035A2941FE55006772A0 /* SceneDelegate.swift */,
 				FAEF03582941FE55006772A0 /* AppDelegate.swift */,
 			);
-			path = SupportFiles;
+			path = SupportFile;
 			sourceTree = "<group>";
 		};
-		FAEF03752941FF0D006772A0 /* ViewControllers */ = {
+		FAEF03752941FF0D006772A0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				FAEF035C2941FE55006772A0 /* ViewController.swift */,
+				FAEF2D8629530EE7002F2F9B /* MainPageViewController.swift */,
 			);
-			path = ViewControllers;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		FAEF03762941FF30006772A0 /* StoryBoards */ = {
+		FAEF03762941FF30006772A0 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
 				FAEF035E2941FE55006772A0 /* Main.storyboard */,
 				FAEF03632941FE56006772A0 /* LaunchScreen.storyboard */,
 			);
-			path = StoryBoards;
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEF035D2941FE55006772A0 /* ViewController.swift in Sources */,
+				FAEF2D8729530EE7002F2F9B /* MainPageViewController.swift in Sources */,
 				FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */,
 				FAEF035B2941FE55006772A0 /* SceneDelegate.swift in Sources */,
 				FAEF03702941FE80006772A0 /* Launch.swift in Sources */,

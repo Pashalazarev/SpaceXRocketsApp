@@ -14,8 +14,13 @@ class ViewController: UIViewController {
         NetworkService.shared.fetchLaunches { launch in
             print(launch)
         }
+        NetworkService.shared.fetchRockets { rocket in
+            print(rocket)
+        }
     }
 }
+
+
 
 
 
