@@ -29,10 +29,6 @@ final class NetworkService {
     private let rocketDecoder = JSONDecoder()
     private let launchDecoder = JSONDecoder()
     
-    let greenViewController = UIViewController()
-    let redViewController = UIViewController()
-    let blueViewController = UIViewController()
-    
     private init() {
         rocketDecoder.keyDecodingStrategy = .convertFromSnakeCase
         
@@ -42,10 +38,6 @@ final class NetworkService {
         let rocketDateFormatter = DateFormatter()
         rocketDateFormatter.dateFormat = "yyyy-MM-dd"
         rocketDecoder.dateDecodingStrategy = .formatted(rocketDateFormatter)
-        
-        greenViewController.view.backgroundColor = .green
-        redViewController.view.backgroundColor = .red
-        blueViewController.view.backgroundColor = .blue
         
     }
     
@@ -57,8 +49,7 @@ final class NetworkService {
     func fetchLaunches(completion: @escaping(Result<[Launch], NetworkError>) -> Void) {
         makeRequest(url: Links.launchUrl, jsonDecoder: launchDecoder, completion: completion)
     }
-    
-    // MARK: - Private method
+    // Разве не надо разделять публичные и приватные методы?
     private func makeRequest<Response: Decodable>(
         url: String,
         jsonDecoder: JSONDecoder,
@@ -84,5 +75,3 @@ final class NetworkService {
         .resume()
     }
 }
-
-
