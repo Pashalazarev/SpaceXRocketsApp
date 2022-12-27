@@ -5,15 +5,12 @@
 //  Created by Pavel Lazarev Macbook on 08.12.2022.
 //
 
-import UIKit
+import Foundation
 
-
-// MARK: - URL links
 private enum Links {
     static let roscketUrl = "https://api.spacexdata.com/v4/rockets"
     static let launchUrl = "https://api.spacexdata.com/v4/launches"
 }
-
 
 final class NetworkService {
     enum NetworkError: Error {
@@ -22,7 +19,7 @@ final class NetworkService {
         case decodingError
     }
     
-    // MARK: - Properties
+// MARK: - Properties
     
     static let shared = NetworkService()
     
@@ -41,7 +38,7 @@ final class NetworkService {
         
     }
     
-    //MARK: Public methods
+   
     func fetchRockets(completion: @escaping(Result<[Rocket], NetworkError>) -> Void) {
         makeRequest(url: Links.roscketUrl, jsonDecoder: rocketDecoder, completion: completion)
     }
@@ -49,7 +46,7 @@ final class NetworkService {
     func fetchLaunches(completion: @escaping(Result<[Launch], NetworkError>) -> Void) {
         makeRequest(url: Links.launchUrl, jsonDecoder: launchDecoder, completion: completion)
     }
-    // Разве не надо разделять публичные и приватные методы?
+// MARK: - Private method
     private func makeRequest<Response: Decodable>(
         url: String,
         jsonDecoder: JSONDecoder,
@@ -65,7 +62,7 @@ final class NetworkService {
                 return
             }
             do {
-                let response = try self.launchDecoder.decode(Response.self, from: data)
+                let response = try jsonDecoder.decode(Response.self, from: data)
                 completion(.success(response))
             }
             catch {

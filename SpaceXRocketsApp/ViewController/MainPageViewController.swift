@@ -7,19 +7,18 @@
 
 import UIKit
 
-private let greenViewController = UIViewController()
-private let redViewController = UIViewController()
-private let blueViewController = UIViewController()
-
 final class MainPageViewController: UIPageViewController {
     
-// MARK: - Private properties
+    private lazy var greenViewController = UIViewController()
+    private lazy var redViewController = UIViewController()
+    private lazy var blueViewController = UIViewController()
     
-    private var colourViewControllers: [UIViewController] = [
+    private lazy var colourViewControllers: [UIViewController] = [
         greenViewController,
         redViewController,
         blueViewController
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
@@ -31,7 +30,7 @@ final class MainPageViewController: UIPageViewController {
         guard let firstViewController = colourViewControllers.first else {
             return
         }
-        setViewControllers([firstViewController], // почему такой firstViewController?
+        setViewControllers([firstViewController],
                            direction: .forward,
                            animated: true)
     }
@@ -49,7 +48,7 @@ extension MainPageViewController: UIPageViewControllerDataSource {
         guard previousIndex >= 0 && colourViewControllers.count > previousIndex else {
             return nil
         }
-        return colourViewControllers[previousIndex] // почему возвращаем это?
+        return colourViewControllers[previousIndex]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -60,21 +59,19 @@ extension MainPageViewController: UIPageViewControllerDataSource {
         let colourViewControllersCount = colourViewControllers.count
         guard colourViewControllersCount != nextIndex &&
                 colourViewControllersCount > nextIndex
-        else { 
+        else {
             return nil
         }
-        return colourViewControllers[nextIndex] // почему возвращаем это?
+        return colourViewControllers[nextIndex]
     }
     
-    // MARK: - Methods for dots
+// MARK: - Methods for dots
+    
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         colourViewControllers.count
     }
+    
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        guard let firstViewController = viewControllers?.first,
-              let firstViewControllerIndex = colourViewControllers.firstIndex(of: firstViewController) else {
-                  return 0
-              }
         return 0
     }
- }
+}

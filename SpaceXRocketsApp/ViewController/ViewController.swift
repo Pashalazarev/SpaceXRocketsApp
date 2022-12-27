@@ -11,31 +11,5 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkService.shared.fetchLaunches { launch in
-            print(launch)
-        }
-        NetworkService.shared.fetchRockets { rocket in
-            print(rocket)
-        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
