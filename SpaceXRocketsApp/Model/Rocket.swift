@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Rocket: Decodable {
+struct Rocket: Codable {
     let name: String
     let height: Height
     let diameter: Diameter
@@ -22,34 +22,34 @@ struct Rocket: Decodable {
 }
 
 extension Rocket {
-    struct Height: Decodable {
+    struct Height: Codable {
         let feet: Double
         let meters: Double
     }
     
-    struct Diameter: Decodable {
+    struct Diameter: Codable {
         let feet: Double
         let meters: Double
     }
     
-    struct Mass: Decodable {
+    struct Mass: Codable {
         let kg: Double
         let lb: Double
     }
     
-    struct PayloadWeights: Decodable {
+    struct PayloadWeights: Codable {
         let id: String
         let kg: Double
         let lb: Double
     }
     
-    struct FirstStage: Decodable {
+    struct FirstStage: Codable {
         let engines: Int
         let fuelAmountTons: Double
         let burnTimeSec: Double?
     }
     
-    struct SecondStage: Decodable {
+    struct SecondStage: Codable {
         let engines: Int
         let fuelAmountTons: Double
         let burnTimeSec: Double?
