@@ -20,7 +20,7 @@ class StorageManager {
 
 // MARK: - Methods for userDefaults
         
-    func saveRocketData(settings: Rocket) { // метод сохраняет данные в userDefaults
+    func saveRocketData(settings: Rocket) {
         var rockets = fetchRocketData()
         rockets.append(settings)
         guard let data = try? rocketEncoder.encode(rockets) else { return }
@@ -28,7 +28,7 @@ class StorageManager {
         userDefaults.set(data, forKey: rocketKey)
     }
     
-    func fetchRocketData() ->[Rocket] { // метод загружает данные в userDefaults
+    func fetchRocketData() ->[Rocket] {
         guard let data = userDefaults.data(forKey: rocketKey) else {
             return []
         }
@@ -38,4 +38,3 @@ class StorageManager {
         return rockets
     }
 }
-
