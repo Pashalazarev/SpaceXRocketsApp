@@ -38,15 +38,19 @@ final class NetworkService {
         
     }
     
-   
     func fetchRockets(completion: @escaping(Result<[Rocket], NetworkError>) -> Void) {
         makeRequest(url: Links.roscketUrl, jsonDecoder: rocketDecoder, completion: completion)
+        
     }
     
     func fetchLaunches(completion: @escaping(Result<[Launch], NetworkError>) -> Void) {
         makeRequest(url: Links.launchUrl, jsonDecoder: launchDecoder, completion: completion)
     }
+}
 // MARK: - Private method
+
+private extension NetworkService {
+    
     private func makeRequest<Response: Decodable>(
         url: String,
         jsonDecoder: JSONDecoder,
