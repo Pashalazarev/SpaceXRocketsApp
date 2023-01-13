@@ -21,6 +21,7 @@ final class MainPageViewController: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         dataSource = self
         
         greenViewController.view.backgroundColor = .green

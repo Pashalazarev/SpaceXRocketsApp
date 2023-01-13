@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0849816660DD6A49D1EB92E6 /* Pods_SpaceXRocketsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */; };
-		FA7617D6295CD8BD00028F2B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7617D5295CD8BD00028F2B /* StorageManager.swift */; };
+		FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7617D5295CD8BD00028F2B /* StorageSettings.swift */; };
+		FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */; };
+		FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */; };
 		FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF03582941FE55006772A0 /* AppDelegate.swift */; };
 		FAEF035B2941FE55006772A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF035A2941FE55006772A0 /* SceneDelegate.swift */; };
 		FAEF035D2941FE55006772A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF035C2941FE55006772A0 /* ViewController.swift */; };
@@ -25,7 +27,9 @@
 		0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXRocketsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B9830E0BB522086756CCAF /* Pods-SpaceXRocketsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DB50D95AF1CF4E78176E6624 /* Pods-SpaceXRocketsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.release.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.release.xcconfig"; sourceTree = "<group>"; };
-		FA7617D5295CD8BD00028F2B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		FA7617D5295CD8BD00028F2B /* StorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettings.swift; sourceTree = "<group>"; };
+		FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		FAEF03552941FE55006772A0 /* SpaceXRocketsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXRocketsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF03582941FE55006772A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEF035A2941FE55006772A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FAC59DD8296DB92700938606 /* CustomSell */ = {
+			isa = PBXGroup;
+			children = (
+				FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */,
+			);
+			path = CustomSell;
+			sourceTree = "<group>";
+		};
 		FAEF034C2941FE55006772A0 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEF03752941FF0D006772A0 /* ViewController */,
+				FAC59DD8296DB92700938606 /* CustomSell */,
 				FAEF036C2941FE60006772A0 /* Model */,
 				FAEF03712941FEB2006772A0 /* Service */,
 				FAEF03762941FF30006772A0 /* StoryBoard */,
@@ -114,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEF03722941FED5006772A0 /* NetworkService.swift */,
-				FA7617D5295CD8BD00028F2B /* StorageManager.swift */,
+				FA7617D5295CD8BD00028F2B /* StorageSettings.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -133,6 +146,7 @@
 			children = (
 				FAEF035C2941FE55006772A0 /* ViewController.swift */,
 				FAEF2D8629530EE7002F2F9B /* MainPageViewController.swift */,
+				FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -269,7 +283,9 @@
 				FAEF03702941FE80006772A0 /* Launch.swift in Sources */,
 				FAEF03732941FED5006772A0 /* NetworkService.swift in Sources */,
 				FAEF036E2941FE74006772A0 /* Rocket.swift in Sources */,
-				FA7617D6295CD8BD00028F2B /* StorageManager.swift in Sources */,
+				FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */,
+				FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */,
+				FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

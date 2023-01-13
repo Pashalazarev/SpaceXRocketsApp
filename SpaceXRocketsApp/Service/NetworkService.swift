@@ -35,12 +35,10 @@ final class NetworkService {
         let rocketDateFormatter = DateFormatter()
         rocketDateFormatter.dateFormat = "yyyy-MM-dd"
         rocketDecoder.dateDecodingStrategy = .formatted(rocketDateFormatter)
-        
     }
     
     func fetchRockets(completion: @escaping(Result<[Rocket], NetworkError>) -> Void) {
         makeRequest(url: Links.roscketUrl, jsonDecoder: rocketDecoder, completion: completion)
-        
     }
     
     func fetchLaunches(completion: @escaping(Result<[Launch], NetworkError>) -> Void) {
