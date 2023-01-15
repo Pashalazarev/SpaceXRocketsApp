@@ -16,7 +16,6 @@ final class SettingsTableViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor = .black
         navigationController?.navigationBar.titleTextAttributes = textAttributes
-    
     }
     
     // MARK: - Table view data source
@@ -29,10 +28,17 @@ final class SettingsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "settings", for: indexPath) as! SettingsTableViewCell
         let settings = availableSettings[indexPath.row]
         cell.settingsTypeLabel.text = settings.type.rawValue
-    
+      
         cell.segmentedControl.setTitle(settings.unit.first?.rawValue, forSegmentAt: 0)
         cell.segmentedControl.setTitle(settings.unit.last?.rawValue, forSegmentAt: 1)
+        
+        cell.onSettingsChanged = { selectedIndex in
+            UserDefaults.standard.set(selectedIndex, forKey: settings.type.rawValue)
+        }
+    
+        cell.segmentedControl.selectedSegmentIndex =
+            UserDefaults.standard.integer(forKey: settings.type.rawValue)
 
         return cell
-    } // метод который возвращает названия для каждой ячейки + значения для segmentedControll
+    }
 }

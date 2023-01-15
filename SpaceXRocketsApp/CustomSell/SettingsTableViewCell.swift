@@ -7,23 +7,14 @@
 
 import UIKit
 
-class SettingsTableViewCell: UITableViewCell {
+final class SettingsTableViewCell: UITableViewCell {
     
-    let settingsTableVC = SettingsTableViewController()
+    var onSettingsChanged: ((Int) -> Void)?
     
     @IBOutlet var settingsTypeLabel: UILabel!
     @IBOutlet var segmentedControl: UISegmentedControl!
-
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
     @IBAction func settingsUnitAction() {
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
+        onSettingsChanged?(segmentedControl.selectedSegmentIndex)
     }
 }
