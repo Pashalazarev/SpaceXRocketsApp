@@ -38,24 +38,3 @@ extension Settings {
         ]
     }
 }
-
-final class StorageSettings {
-
-    static let shared = StorageSettings()
-
-    private let userDefaults = UserDefaults.standard
-    
-    private init() {}
-}
-
-extension StorageSettings {
-    
-    func saveUserSettings(setting: Settings.SettingsType, value: Settings.Units) {
-        userDefaults.set(value.rawValue, forKey: setting.rawValue)
-    }
-    
-    func getUserSettings(setting: Settings.SettingsType) -> Settings.Units? {
-        guard let getUnit = userDefaults.string(forKey: setting.rawValue) else { return nil }
-        return Settings.Units(rawValue: getUnit)
-    }
-}

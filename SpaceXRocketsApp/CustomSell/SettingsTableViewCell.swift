@@ -8,11 +8,23 @@
 import UIKit
 
 final class SettingsTableViewCell: UITableViewCell {
-    
+
     var onSettingsChanged: ((Int) -> Void)?
     
-    @IBOutlet var settingsTypeLabel: UILabel!
-    @IBOutlet var segmentedControl: UISegmentedControl!
+    func configure(settings: Settings) {
+        settingsTypeLabel.text = settings.type.rawValue
+        segmentedControl.setTitle(settings.unit.first?.rawValue, forSegmentAt: 0)
+        segmentedControl.setTitle(settings.unit.last?.rawValue, forSegmentAt: 1)
+        
+        onSettingsChanged = { selectedIndex in
+            UserDefaults.standard.set(selectedIndex, forKey: settings.type.rawValue)
+        }
+        segmentedControl.self.selectedSegmentIndex = UserDefaults.standard.integer(forKey: settings.type.rawValue )
+    }
+    
+    @IBOutlet private var settingsTypeLabel: UILabel!
+    @IBOutlet private var segmentedControl: UISegmentedControl!
+    
     
     @IBAction func settingsUnitAction() {
         onSettingsChanged?(segmentedControl.selectedSegmentIndex)
