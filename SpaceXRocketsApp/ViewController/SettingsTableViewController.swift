@@ -11,7 +11,6 @@ final class SettingsTableViewController: UITableViewController {
     
     private let availableSettings = Settings.availableSettings()
     private let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.lightText]
-    private let tableViewCell = SettingsTableViewCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +28,7 @@ final class SettingsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "settings", for: indexPath) as! SettingsTableViewCell
         let settings = availableSettings[indexPath.row]
         
-
-
-//        cell.onSettingsChanged = { selectedIndex in
-//            UserDefaults.standard.set(selectedIndex, forKey: settings.type.rawValue)
-//        }
-//
-//        cell.segmentedControl.selectedSegmentIndex =
-//            UserDefaults.standard.integer(forKey: settings.type.rawValue)
+        cell.configure(settings: settings)
 
         return cell
     }
