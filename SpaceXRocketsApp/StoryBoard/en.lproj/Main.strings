@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1fw-lk-xm6"; */
+"1fw-lk-xm6.text" = "Label";
+
+/* Class = "UISegmentedControl"; 2eh-u7-2uu.segmentTitles[0] = "First"; ObjectID = "2eh-u7-2uu"; */
+"2eh-u7-2uu.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; 2eh-u7-2uu.segmentTitles[1] = "Second"; ObjectID = "2eh-u7-2uu"; */
+"2eh-u7-2uu.segmentTitles[1]" = "Second";
+
+/* Class = "UILabel"; text = "Полезная нагрузка"; ObjectID = "7BB-OW-GqV"; */
+"7BB-OW-GqV.text" = "Полезная нагрузка";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CpB-VT-Hng"; */
+"CpB-VT-Hng.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Закрыть"; ObjectID = "IJW-zU-WAU"; */
+"IJW-zU-WAU.title" = "Закрыть";
+
+/* Class = "UINavigationItem"; title = "Настройки"; ObjectID = "etf-Rb-5Ez"; */
+"etf-Rb-5Ez.title" = "Настройки";
+
+/* Class = "UIButton"; configuration.title = "Launches"; ObjectID = "iAC-b0-vMj"; */
+"iAC-b0-vMj.configuration.title" = "Launches";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iAC-b0-vMj"; */
+"iAC-b0-vMj.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Settings"; ObjectID = "wUj-OW-bvp"; */
+"wUj-OW-bvp.configuration.title" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wUj-OW-bvp"; */
+"wUj-OW-bvp.normalTitle" = "Button";

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RUH-Uf-4mF">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,7 +16,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucA-6Z-iau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="-536"/>
+            <point key="canvasLocation" x="1629" y="-514"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4G1-XW-xRy">
@@ -25,10 +25,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fRC-O2-9yx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zsZ-mo-rlf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gFX-BC-qOH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="f0U-sm-dIv" kind="relationship" relationship="rootViewController" id="ZXT-Rc-CFB"/>
                     </connections>
@@ -42,7 +45,7 @@
             <objects>
                 <tableViewController id="8Rl-UF-4de" customClass="SettingsTableViewController" customModule="SpaceXRocketsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fSI-E4-vG6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -54,11 +57,11 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полезная нагрузка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BB-OW-GqV">
-                                            <rect key="frame" x="16" y="6" width="128.66666666666666" height="31"/>
+                                            <rect key="frame" x="16" y="6" width="145" height="31"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123.33333333333333" id="LgI-Ai-5Ol"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -116,35 +119,43 @@
             <objects>
                 <viewController id="f0U-sm-dIv" customClass="ViewController" customModule="SpaceXRocketsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9g-XX-e4m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yXL-CF-al9">
-                                <rect key="frame" x="173.66666666666666" y="352.66666666666669" width="67" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nzb-WW-cAc">
+                                <rect key="frame" x="164" y="412" width="86.333333333333314" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUj-OW-bvp">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Settings"/>
                                         <connections>
                                             <segue destination="5iN-h0-6ls" kind="presentation" identifier="settings" id="2GF-jA-GHz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAC-b0-vMj">
+                                        <rect key="frame" x="0.0" y="41" width="86.333333333333329" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Launches"/>
+                                        <connections>
+                                            <segue destination="oKy-EM-GDz" kind="show" identifier="launches" id="Vgx-rG-JcH"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tsf-nd-IiZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yXL-CF-al9" firstAttribute="centerY" secondItem="C9g-XX-e4m" secondAttribute="centerY" id="Gwf-JY-6Sg"/>
-                            <constraint firstItem="yXL-CF-al9" firstAttribute="centerX" secondItem="C9g-XX-e4m" secondAttribute="centerX" id="udb-0C-XPw"/>
+                            <constraint firstItem="nzb-WW-cAc" firstAttribute="centerX" secondItem="C9g-XX-e4m" secondAttribute="centerX" id="00E-L6-ctp"/>
+                            <constraint firstItem="nzb-WW-cAc" firstAttribute="centerY" secondItem="C9g-XX-e4m" secondAttribute="centerY" id="LFN-yh-GHo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CBO-Rh-lWu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYL-Bz-H6K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2668" y="-1213"/>
+            <point key="canvasLocation" x="2577" y="-900"/>
         </scene>
         <!--Navigation Settings View Controller-->
         <scene sceneID="TBZ-nV-ycq">
@@ -164,8 +175,99 @@
             </objects>
             <point key="canvasLocation" x="3570" y="-1213"/>
         </scene>
+        <!--Название ракеты-->
+        <scene sceneID="k0r-7Y-5Sy">
+            <objects>
+                <tableViewController id="oKy-EM-GDz" customClass="LaunchesTableTableViewController" customModule="SpaceXRocketsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="AVy-Ox-gH0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="launches" rowHeight="100" id="vLm-5w-CiB" customClass="LaunchesTableViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vLm-5w-CiB" id="ibh-mT-AFk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr0-Zz-hnM">
+                                            <rect key="frame" x="20" y="10" width="374" height="79"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="sM3-a6-QLV">
+                                                    <rect key="frame" x="20" y="20" width="159.33333333333334" height="44"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Название ракеты" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-XR-oHz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="24.666666666666668"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата пуска" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S0s-4C-x5W">
+                                                            <rect key="frame" x="0.0" y="24.666666666666664" width="84" height="19.333333333333336"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="19.333333333333336" id="xa6-jZ-t89"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-kH-Wvt">
+                                                    <rect key="frame" x="316" y="26" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="7De-4l-l7o"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="lhe-kH-Wvt" secondAttribute="bottom" constant="21" id="3zz-TW-B33"/>
+                                                <constraint firstAttribute="trailing" secondItem="lhe-kH-Wvt" secondAttribute="trailing" constant="26" id="8EU-Kc-RHe"/>
+                                                <constraint firstItem="sM3-a6-QLV" firstAttribute="leading" secondItem="Fr0-Zz-hnM" secondAttribute="leading" constant="20" id="BMt-Tw-L6V"/>
+                                                <constraint firstItem="lhe-kH-Wvt" firstAttribute="top" secondItem="Fr0-Zz-hnM" secondAttribute="top" constant="26" id="PFs-uj-NMF"/>
+                                                <constraint firstItem="lhe-kH-Wvt" firstAttribute="centerY" secondItem="sM3-a6-QLV" secondAttribute="centerY" id="lPW-hg-HCb"/>
+                                                <constraint firstItem="sM3-a6-QLV" firstAttribute="top" secondItem="Fr0-Zz-hnM" secondAttribute="top" constant="20" id="oFz-34-vOa"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Fr0-Zz-hnM" secondAttribute="bottom" constant="11" id="Ccy-UM-Tfs"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fr0-Zz-hnM" secondAttribute="trailing" constant="20" symbolic="YES" id="Qsw-p5-mUx"/>
+                                        <constraint firstItem="Fr0-Zz-hnM" firstAttribute="top" secondItem="ibh-mT-AFk" secondAttribute="top" constant="10" id="icw-zx-1ox"/>
+                                        <constraint firstItem="Fr0-Zz-hnM" firstAttribute="leading" secondItem="ibh-mT-AFk" secondAttribute="leading" constant="20" symbolic="YES" id="rMq-cs-IB1"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateOfLaunchLabel" destination="S0s-4C-x5W" id="bAP-8S-34Y"/>
+                                    <outlet property="launchImage" destination="lhe-kH-Wvt" id="2hH-zm-TqQ"/>
+                                    <outlet property="launcheNameLable" destination="JQR-XR-oHz" id="zE2-xy-MJr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oKy-EM-GDz" id="VhH-Kr-UFT"/>
+                            <outlet property="delegate" destination="oKy-EM-GDz" id="FlZ-Bx-7fi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Название ракеты" id="ppm-eC-L4A"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kow-hr-Ir8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4584" y="-522"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

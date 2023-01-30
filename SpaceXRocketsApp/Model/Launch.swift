@@ -10,4 +10,5 @@ import Foundation
 struct Launch: Decodable {
     let name: String
     let dateLocal: Date
+    let success: Bool?
 }

@@ -8,11 +8,12 @@
 import UIKit
 
 final class ViewController: UIViewController {
- 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NetworkService.shared.fetchLaunches { rockets in
+            print(rockets)
+        }
     }
-    
-    
+
     @IBAction func unwidSegueAction(unwindSegue: UIStoryboardSegue) {}
 }
