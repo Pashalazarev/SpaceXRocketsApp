@@ -6,18 +6,13 @@
 
 import UIKit
 
-private enum LaunchImages {
-    static let success = "success launch"
-    static let failed = "failed launch"
-}
-
 final class LaunchesTableViewCell: UITableViewCell {
     
-    @IBOutlet var viewForCell: UIView!
+    @IBOutlet private var viewForCell: UIView!
     @IBOutlet private var launcheNameLable: UILabel!
     @IBOutlet private var dateOfLaunchLabel: UILabel!
     
-    @IBOutlet var launchImage: UIImageView!
+    @IBOutlet private var launchImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,13 +21,9 @@ final class LaunchesTableViewCell: UITableViewCell {
     
     // MARK: - Configuration method for cell
     
-    func configure(launches: Launch, date: String) {
+    func configure(launches: Launch, date: String, typeOfLaunch: UIImage) {
         launcheNameLable.text = launches.name
         dateOfLaunchLabel.text = date
-        if launches.success == true {
-            launchImage.image = UIImage.init(named: LaunchImages.success)
-        } else if launches.success == false {
-            launchImage.image = UIImage.init(named: LaunchImages.failed)
-        }
+        launchImage.image = typeOfLaunch
     }
 }

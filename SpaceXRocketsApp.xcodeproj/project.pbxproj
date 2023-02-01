@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0849816660DD6A49D1EB92E6 /* Pods_SpaceXRocketsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */; };
-		FA031751297DBD3E005C0D80 /* LaunchesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031750297DBD3E005C0D80 /* LaunchesTableTableViewController.swift */; };
+		FA031751297DBD3E005C0D80 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */; };
 		FA031753297DBD5E005C0D80 /* LaunchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */; };
 		FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7617D5295CD8BD00028F2B /* StorageSettings.swift */; };
 		FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */; };
@@ -29,7 +29,7 @@
 		0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXRocketsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B9830E0BB522086756CCAF /* Pods-SpaceXRocketsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DB50D95AF1CF4E78176E6624 /* Pods-SpaceXRocketsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.release.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.release.xcconfig"; sourceTree = "<group>"; };
-		FA031750297DBD3E005C0D80 /* LaunchesTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableTableViewController.swift; sourceTree = "<group>"; };
+		FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewCell.swift; sourceTree = "<group>"; };
 		FA7617D5295CD8BD00028F2B /* StorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettings.swift; sourceTree = "<group>"; };
 		FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				FAEF035C2941FE55006772A0 /* ViewController.swift */,
 				FAEF2D8629530EE7002F2F9B /* MainPageViewController.swift */,
 				FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */,
-				FA031750297DBD3E005C0D80 /* LaunchesTableTableViewController.swift */,
+				FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 				FA031753297DBD5E005C0D80 /* LaunchesTableViewCell.swift in Sources */,
 				FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */,
 				FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */,
-				FA031751297DBD3E005C0D80 /* LaunchesTableTableViewController.swift in Sources */,
+				FA031751297DBD3E005C0D80 /* LaunchesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

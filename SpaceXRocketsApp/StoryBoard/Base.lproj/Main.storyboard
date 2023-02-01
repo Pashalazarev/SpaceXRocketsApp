@@ -49,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" id="Td0-HK-UNT" customClass="SettingsTableViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" id="Td0-HK-UNT" customClass="SettingsTableViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Td0-HK-UNT" id="KAe-fE-emE">
@@ -130,7 +130,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Settings"/>
                                         <connections>
-                                            <segue destination="5iN-h0-6ls" kind="presentation" identifier="settings" id="2GF-jA-GHz"/>
+                                            <segue destination="5iN-h0-6ls" kind="presentation" identifier="SettingsTableViewCell" id="2GF-jA-GHz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAC-b0-vMj">
@@ -138,7 +138,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Launches"/>
                                         <connections>
-                                            <segue destination="oKy-EM-GDz" kind="show" identifier="launches" id="Vgx-rG-JcH"/>
+                                            <segue destination="oKy-EM-GDz" kind="show" identifier="LaunchesTableViewCell" id="Vgx-rG-JcH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -177,16 +177,16 @@
             </objects>
             <point key="canvasLocation" x="3570" y="-1213"/>
         </scene>
-        <!--Launches Table Table View Controller-->
+        <!--Launches Table View Controller-->
         <scene sceneID="k0r-7Y-5Sy">
             <objects>
-                <tableViewController id="oKy-EM-GDz" customClass="LaunchesTableTableViewController" customModule="SpaceXRocketsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="oKy-EM-GDz" customClass="LaunchesTableViewController" customModule="SpaceXRocketsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="AVy-Ox-gH0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="launches" rowHeight="100" id="vLm-5w-CiB" customClass="LaunchesTableViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchesTableViewCell" rowHeight="100" id="vLm-5w-CiB" customClass="LaunchesTableViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vLm-5w-CiB" id="ibh-mT-AFk">

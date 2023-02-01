@@ -24,7 +24,7 @@ final class SettingsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "settings", for: indexPath) as? SettingsTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String( describing: SettingsTableViewCell.self), for: indexPath) as? SettingsTableViewCell
         else {
             return UITableViewCell()
         }
