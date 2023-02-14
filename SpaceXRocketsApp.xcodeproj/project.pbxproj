@@ -11,6 +11,7 @@
 		FA031751297DBD3E005C0D80 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */; };
 		FA031753297DBD5E005C0D80 /* LaunchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */; };
 		FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7617D5295CD8BD00028F2B /* StorageSettings.swift */; };
+		FA82B22C29915DDA004FE905 /* RocketInfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */; };
 		FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */; };
 		FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */; };
 		FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF03582941FE55006772A0 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewCell.swift; sourceTree = "<group>"; };
 		FA7617D5295CD8BD00028F2B /* StorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettings.swift; sourceTree = "<group>"; };
+		FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketInfoStorage.swift; sourceTree = "<group>"; };
 		FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		FAEF03552941FE55006772A0 /* SpaceXRocketsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXRocketsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 			children = (
 				FAEF03722941FED5006772A0 /* NetworkService.swift */,
 				FA7617D5295CD8BD00028F2B /* StorageSettings.swift */,
+				FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA82B22C29915DDA004FE905 /* RocketInfoStorage.swift in Sources */,
 				FAEF035D2941FE55006772A0 /* ViewController.swift in Sources */,
 				FAEF2D8729530EE7002F2F9B /* MainPageViewController.swift in Sources */,
 				FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */,

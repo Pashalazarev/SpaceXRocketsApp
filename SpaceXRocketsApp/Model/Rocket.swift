@@ -38,7 +38,6 @@ extension Rocket {
     }
     
     struct PayloadWeights: Codable {
-        let id: String
         let kg: Double
         let lb: Double
     }
@@ -54,4 +53,5 @@ extension Rocket {
         let fuelAmountTons: Double
         let burnTimeSec: Double?
     }
+        
 }
