@@ -30,7 +30,7 @@ extension Section {
         case button
     }
     
-    static func getSection(rocket: Rocket) -> [Section] {
+    static func getSections(rocket: Rocket) -> [Section] {
         dateFormatter.dateFormat = "dd.MM.yyyy"
         
         let heightValue: String

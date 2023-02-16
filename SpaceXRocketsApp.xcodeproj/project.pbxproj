@@ -8,10 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0849816660DD6A49D1EB92E6 /* Pods_SpaceXRocketsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */; };
+		FA002D86299E307C00234AC0 /* VerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002D84299E307C00234AC0 /* VerticalCollectionViewCell.swift */; };
+		FA002D87299E307C00234AC0 /* VerticalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA002D85299E307C00234AC0 /* VerticalCollectionViewCell.xib */; };
+		FA002D8A299E30A500234AC0 /* HorizontalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002D88299E30A500234AC0 /* HorizontalCollectionViewCell.swift */; };
+		FA002D8B299E30A500234AC0 /* HorizontalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA002D89299E30A500234AC0 /* HorizontalCollectionViewCell.xib */; };
+		FA002D8E299E30C300234AC0 /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002D8C299E30C300234AC0 /* ButtonCollectionViewCell.swift */; };
+		FA002D8F299E30C300234AC0 /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA002D8D299E30C300234AC0 /* ButtonCollectionViewCell.xib */; };
 		FA031751297DBD3E005C0D80 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */; };
 		FA031753297DBD5E005C0D80 /* LaunchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */; };
 		FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7617D5295CD8BD00028F2B /* StorageSettings.swift */; };
 		FA82B22C29915DDA004FE905 /* RocketInfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */; };
+		FA8434CF299CFDE80064CB0B /* MainScreenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8434CE299CFDE70064CB0B /* MainScreenCollectionViewController.swift */; };
+		FA8434D1299D08A90064CB0B /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8434D0299D08A90064CB0B /* HeaderViewCell.xib */; };
+		FA8434D4299D0C790064CB0B /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8434D3299D0C790064CB0B /* HeaderCollectionViewCell.swift */; };
 		FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */; };
 		FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */; };
 		FAEF03592941FE55006772A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF03582941FE55006772A0 /* AppDelegate.swift */; };
@@ -30,10 +39,19 @@
 		0AFF748724DDD3A0BB65230D /* Pods_SpaceXRocketsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXRocketsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B9830E0BB522086756CCAF /* Pods-SpaceXRocketsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DB50D95AF1CF4E78176E6624 /* Pods-SpaceXRocketsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXRocketsApp.release.xcconfig"; path = "Target Support Files/Pods-SpaceXRocketsApp/Pods-SpaceXRocketsApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA002D84299E307C00234AC0 /* VerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA002D85299E307C00234AC0 /* VerticalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA002D88299E30A500234AC0 /* HorizontalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA002D89299E30A500234AC0 /* HorizontalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA002D8C299E30C300234AC0 /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA002D8D299E30C300234AC0 /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA031750297DBD3E005C0D80 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewCell.swift; sourceTree = "<group>"; };
 		FA7617D5295CD8BD00028F2B /* StorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettings.swift; sourceTree = "<group>"; };
 		FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketInfoStorage.swift; sourceTree = "<group>"; };
+		FA8434CE299CFDE70064CB0B /* MainScreenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCollectionViewController.swift; sourceTree = "<group>"; };
+		FA8434D0299D08A90064CB0B /* HeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
+		FA8434D3299D0C790064CB0B /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		FAEF03552941FE55006772A0 /* SpaceXRocketsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXRocketsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,13 +97,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAC59DD8296DB92700938606 /* CustomSell */ = {
+		FA8434D2299D0C480064CB0B /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA8434D0299D08A90064CB0B /* HeaderViewCell.xib */,
+				FA002D85299E307C00234AC0 /* VerticalCollectionViewCell.xib */,
+				FA002D89299E30A500234AC0 /* HorizontalCollectionViewCell.xib */,
+				FA002D8D299E30C300234AC0 /* ButtonCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FAC59DD8296DB92700938606 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
 				FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */,
 				FA031752297DBD5E005C0D80 /* LaunchesTableViewCell.swift */,
+				FA8434D3299D0C790064CB0B /* HeaderCollectionViewCell.swift */,
+				FA002D84299E307C00234AC0 /* VerticalCollectionViewCell.swift */,
+				FA002D88299E30A500234AC0 /* HorizontalCollectionViewCell.swift */,
+				FA002D8C299E30C300234AC0 /* ButtonCollectionViewCell.swift */,
 			);
-			path = CustomSell;
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 		FAEF034C2941FE55006772A0 = {
@@ -110,7 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				FAEF03752941FF0D006772A0 /* ViewController */,
-				FAC59DD8296DB92700938606 /* CustomSell */,
+				FAC59DD8296DB92700938606 /* CustomCell */,
+				FA8434D2299D0C480064CB0B /* CollectionViewCell */,
 				FAEF036C2941FE60006772A0 /* Model */,
 				FAEF03712941FEB2006772A0 /* Service */,
 				FAEF03762941FF30006772A0 /* StoryBoard */,
@@ -152,6 +186,7 @@
 		FAEF03752941FF0D006772A0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FA8434CE299CFDE70064CB0B /* MainScreenCollectionViewController.swift */,
 				FAEF035C2941FE55006772A0 /* ViewController.swift */,
 				FAEF2D8629530EE7002F2F9B /* MainPageViewController.swift */,
 				FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */,
@@ -229,9 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA002D8F299E30C300234AC0 /* ButtonCollectionViewCell.xib in Resources */,
+				FA002D87299E307C00234AC0 /* VerticalCollectionViewCell.xib in Resources */,
 				FAEF03652941FE56006772A0 /* LaunchScreen.storyboard in Resources */,
+				FA002D8B299E30A500234AC0 /* HorizontalCollectionViewCell.xib in Resources */,
 				FAEF03622941FE56006772A0 /* Assets.xcassets in Resources */,
 				FAEF03602941FE55006772A0 /* Main.storyboard in Resources */,
+				FA8434D1299D08A90064CB0B /* HeaderViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +334,13 @@
 				FAEF036E2941FE74006772A0 /* Rocket.swift in Sources */,
 				FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */,
 				FA031753297DBD5E005C0D80 /* LaunchesTableViewCell.swift in Sources */,
+				FA002D8A299E30A500234AC0 /* HorizontalCollectionViewCell.swift in Sources */,
 				FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */,
+				FA8434CF299CFDE80064CB0B /* MainScreenCollectionViewController.swift in Sources */,
+				FA8434D4299D0C790064CB0B /* HeaderCollectionViewCell.swift in Sources */,
 				FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */,
+				FA002D86299E307C00234AC0 /* VerticalCollectionViewCell.swift in Sources */,
+				FA002D8E299E30C300234AC0 /* ButtonCollectionViewCell.swift in Sources */,
 				FA031751297DBD3E005C0D80 /* LaunchesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
