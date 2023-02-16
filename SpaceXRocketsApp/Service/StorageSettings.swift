@@ -29,7 +29,7 @@ extension Settings {
         case pounds = "lb"
     }
     
-   static func availableSettings() -> [Settings] {
+    static func availableSettings() -> [Settings] {
         [
             Settings(type: .height, unit: [.meters, .feets], selectedUnit: .meters),
             Settings(type: .diameter, unit: [.meters, .feets], selectedUnit: .meters),
