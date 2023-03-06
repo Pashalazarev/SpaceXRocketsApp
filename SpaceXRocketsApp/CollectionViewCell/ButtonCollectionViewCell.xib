@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ButtonCollectionViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ButtonCollectionViewCell" id="gTV-IL-0wX" customClass="ButtonCollectionViewCell" customModule="SpaceXRocketsApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="311" height="56"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -21,7 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="311" height="56"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Посмотреть запуски"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        <connections>
+                            <action selector="showLaunchesButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="SIe-eG-gO6"/>
+                            <action selector="showLaunchesButtonPressed" destination="gTV-IL-0wX" eventType="touchUpInside" id="e8z-p1-9In"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
@@ -33,6 +37,9 @@
                 <constraint firstItem="SIa-LH-PxF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ykW-dH-zSE"/>
                 <constraint firstAttribute="trailing" secondItem="SIa-LH-PxF" secondAttribute="trailing" id="yqV-ca-Abl"/>
             </constraints>
+            <connections>
+                <outlet property="showLaunchesButton" destination="SIa-LH-PxF" id="6hy-lC-4PV"/>
+            </connections>
             <point key="canvasLocation" x="132" y="100"/>
         </collectionViewCell>
     </objects>

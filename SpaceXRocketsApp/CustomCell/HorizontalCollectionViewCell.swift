@@ -9,9 +9,18 @@ import UIKit
 
 class HorizontalCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var valueLabel: UILabel!
+    
+    static let identifier = "HorizontalCollectionViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+    }
+    
+    static func nib() -> UINib{
+        return UINib(nibName: "HorizontalCollectionViewCell", bundle: nil)
     }
 
 }

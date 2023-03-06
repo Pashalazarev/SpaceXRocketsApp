@@ -9,9 +9,20 @@ import UIKit
 
 class ButtonCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var showLaunchesButton: UIButton!
+    
+    static let identifier = "ButtonCollectionViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+     
     }
 
+    @IBAction func showLaunchesButtonPressed() {
+    }
+    
+    static func nib() -> UINib{
+        return UINib(nibName: "ButtonCollectionViewCell", bundle: nil)
+    }
+    
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 struct Rocket: Codable {
+
     let name: String
     let height: Height
     let diameter: Diameter
@@ -22,6 +23,7 @@ struct Rocket: Codable {
 }
 
 extension Rocket {
+    
     struct Height: Codable {
         let feet: Double
         let meters: Double

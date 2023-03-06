@@ -19,7 +19,7 @@
 		FA7617D6295CD8BD00028F2B /* StorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7617D5295CD8BD00028F2B /* StorageSettings.swift */; };
 		FA82B22C29915DDA004FE905 /* RocketInfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */; };
 		FA8434CF299CFDE80064CB0B /* MainScreenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8434CE299CFDE70064CB0B /* MainScreenCollectionViewController.swift */; };
-		FA8434D1299D08A90064CB0B /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8434D0299D08A90064CB0B /* HeaderViewCell.xib */; };
+		FA8434D1299D08A90064CB0B /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8434D0299D08A90064CB0B /* HeaderCollectionViewCell.xib */; };
 		FA8434D4299D0C790064CB0B /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8434D3299D0C790064CB0B /* HeaderCollectionViewCell.swift */; };
 		FAC59DD7296DA94F00938606 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */; };
 		FAC59DDA296DB99C00938606 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */; };
@@ -50,7 +50,7 @@
 		FA7617D5295CD8BD00028F2B /* StorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettings.swift; sourceTree = "<group>"; };
 		FA82B22B29915DDA004FE905 /* RocketInfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketInfoStorage.swift; sourceTree = "<group>"; };
 		FA8434CE299CFDE70064CB0B /* MainScreenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCollectionViewController.swift; sourceTree = "<group>"; };
-		FA8434D0299D08A90064CB0B /* HeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
+		FA8434D0299D08A90064CB0B /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA8434D3299D0C790064CB0B /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAC59DD6296DA94F00938606 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FAC59DD9296DB99C00938606 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		FA8434D2299D0C480064CB0B /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				FA8434D0299D08A90064CB0B /* HeaderViewCell.xib */,
+				FA8434D0299D08A90064CB0B /* HeaderCollectionViewCell.xib */,
 				FA002D85299E307C00234AC0 /* VerticalCollectionViewCell.xib */,
 				FA002D89299E30A500234AC0 /* HorizontalCollectionViewCell.xib */,
 				FA002D8D299E30C300234AC0 /* ButtonCollectionViewCell.xib */,
@@ -270,7 +270,7 @@
 				FA002D8B299E30A500234AC0 /* HorizontalCollectionViewCell.xib in Resources */,
 				FAEF03622941FE56006772A0 /* Assets.xcassets in Resources */,
 				FAEF03602941FE55006772A0 /* Main.storyboard in Resources */,
-				FA8434D1299D08A90064CB0B /* HeaderViewCell.xib in Resources */,
+				FA8434D1299D08A90064CB0B /* HeaderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
